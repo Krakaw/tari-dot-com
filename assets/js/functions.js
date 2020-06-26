@@ -18,9 +18,6 @@
     let updateHash = false;
     const homepage = window.location.href.split('/#')[0] === site || window.location.href.replace(/\/$/, "") === site;
 
-    if (homepage) {
-        renderIssues(Tari.githubIssuesPlaceholder);
-    }
     // Cache ajax requests by default
     jQuery.ajaxSetup({
         cache: true
